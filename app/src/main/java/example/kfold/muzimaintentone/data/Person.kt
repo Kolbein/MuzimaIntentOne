@@ -1,4 +1,4 @@
-package example.kfold.muzimaintentone
+package example.kfold.muzimaintentone.data
 
 import java.util.*
 

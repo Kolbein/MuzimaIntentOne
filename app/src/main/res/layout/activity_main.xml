@@ -17,13 +17,30 @@
         android:textColor="#fff"
         android:textSize="30dp" />
 
-    <Button
-        android:id="@+id/sendIntentBtn"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#55f"
-        android:text="Get resource string\n from FHIR app"
-        android:textColor="#fff" />
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sendIntentBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="#55f"
+            android:text="Request resource\n from FHIR app"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/requestListBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#55f"
+            android:text="Request resource \n list from FHIR app"
+            android:textColor="#fff" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/intentTV"
@@ -32,6 +49,13 @@
         android:layout_marginBottom="50dp"
         android:text="Result: "
         android:textColor="#fff" />
+
+    <ListView
+        android:id="@+id/resourceLV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="#55f"
+        android:dividerHeight="1dp"/>
 
     <EditText
         android:id="@+id/resourceET"
@@ -47,10 +71,10 @@
         android:id="@+id/sendResourceBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:background="#55f"
         android:text="Send text to FHIR app"
-        android:textColor="#fff"
-        android:layout_marginBottom="20dp"/>
+        android:textColor="#fff" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -59,21 +83,21 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/personBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Send Person"
+            android:layout_marginRight="10dp"
             android:background="#55f"
-            android:textColor="#fff"
-            android:id="@+id/personBtn"
-            android:layout_marginRight="10dp"/>
+            android:text="Send Person"
+            android:textColor="#fff" />
 
         <Button
+            android:id="@+id/encounterBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Send Encounter"
             android:background="#55f"
-            android:textColor="#fff"
-            android:id="@+id/encounterBtn"/>
+            android:text="Send Encounter"
+            android:textColor="#fff" />
 
     </LinearLayout>
 
